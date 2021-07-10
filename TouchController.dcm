@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TTP223
+D 1 KEY TOUCH PAD DETECTOR IC
+K TOUCH PAD
+$ENDCMP
+#
+#End Doc Library
