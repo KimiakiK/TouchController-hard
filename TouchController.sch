@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Touch Controller"
-Date "2021-07-06"
-Rev "V1.0"
+Date "2021-08-01"
+Rev "V1.1"
 Comp "https://github.com/KimiakiK"
 Comment1 ""
 Comment2 ""
@@ -93,53 +93,53 @@ $EndComp
 $Comp
 L Connector:USB_B_Micro J1
 U 1 1 60E61BD0
-P 1200 1800
-F 0 "J1" H 1200 2250 50  0000 C CNN
-F 1 "USB_B_Micro" H 1200 2150 50  0000 C CNN
-F 2 "TouchController:ZX62-B-5PA" H 1350 1750 50  0001 C CNN
-F 3 "~" H 1350 1750 50  0001 C CNN
-	1    1200 1800
+P 1750 1800
+F 0 "J1" H 1750 2250 50  0000 C CNN
+F 1 "USB_B_Micro" H 1750 2150 50  0000 C CNN
+F 2 "TouchController:ZX62-B-5PA" H 1900 1750 50  0001 C CNN
+F 3 "~" H 1900 1750 50  0001 C CNN
+	1    1750 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 60E6293A
-P 1850 1600
-F 0 "F1" V 1650 1600 50  0000 C CNN
-F 1 "ResettableFuse" V 1750 1600 50  0000 C CNN
-F 2 "TouchController:1608Metric" H 1900 1400 50  0001 L CNN
-F 3 "~" H 1850 1600 50  0001 C CNN
-	1    1850 1600
+P 2400 1600
+F 0 "F1" V 2200 1600 50  0000 C CNN
+F 1 "ResettableFuse" V 2300 1600 50  0000 C CNN
+F 2 "TouchController:1608Metric" H 2450 1400 50  0001 L CNN
+F 3 "~" H 2400 1600 50  0001 C CNN
+	1    2400 1600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:L L1
 U 1 1 60E62D95
-P 2450 1600
-F 0 "L1" V 2650 1600 50  0000 C CNN
-F 1 "FerriteBead" V 2550 1600 50  0000 C CNN
-F 2 "TouchController:1608Metric" H 2450 1600 50  0001 C CNN
-F 3 "~" H 2450 1600 50  0001 C CNN
-	1    2450 1600
+P 3000 1600
+F 0 "L1" V 3200 1600 50  0000 C CNN
+F 1 "FerriteBead" V 3100 1600 50  0000 C CNN
+F 2 "TouchController:1608Metric" H 3000 1600 50  0001 C CNN
+F 3 "~" H 3000 1600 50  0001 C CNN
+	1    3000 1600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 60E6363A
-P 1200 2200
-F 0 "#PWR08" H 1200 1950 50  0001 C CNN
-F 1 "GND" H 1200 2050 50  0000 C CNN
-F 2 "" H 1200 2200 50  0001 C CNN
-F 3 "" H 1200 2200 50  0001 C CNN
-	1    1200 2200
+P 1750 2200
+F 0 "#PWR08" H 1750 1950 50  0001 C CNN
+F 1 "GND" H 1750 2050 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 2200 1200 2200
-Connection ~ 1200 2200
-NoConn ~ 1500 2000
-NoConn ~ 1500 1900
-NoConn ~ 1500 1800
+	1650 2200 1750 2200
+Connection ~ 1750 2200
+NoConn ~ 2050 2000
+NoConn ~ 2050 1900
+NoConn ~ 2050 1800
 $Comp
 L Device:C C4
 U 1 1 60E6CE52
@@ -186,9 +186,9 @@ F 3 "" H 3400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1600 1700 1600
+	2050 1600 2250 1600
 Wire Wire Line
-	2000 1600 2300 1600
+	2550 1600 2850 1600
 Wire Wire Line
 	3150 1600 3400 1600
 Connection ~ 3400 1600
@@ -228,19 +228,6 @@ Wire Wire Line
 	3400 1600 3400 2200
 Wire Wire Line
 	4650 1600 4650 2200
-$Comp
-L Device:D_Schottky D9
-U 1 1 60E86FD8
-P 3000 1600
-F 0 "D9" H 3000 1383 50  0000 C CNN
-F 1 "SchottkyDiode" H 3000 1474 50  0000 C CNN
-F 2 "TouchController:D_TUMD2" H 3000 1600 50  0001 C CNN
-F 3 "~" H 3000 1600 50  0001 C CNN
-	1    3000 1600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 1600 2850 1600
 Wire Wire Line
 	4400 2200 4650 2200
 $Comp
